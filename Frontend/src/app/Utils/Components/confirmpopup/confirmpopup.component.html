@@ -1,0 +1,10 @@
+<div class="container" style="text-align: center;">
+  <h2 mat-dialog-title>{{title}}</h2>
+  <mat-dialog-content class="mat-typography">
+    <p> {{message}}</p>
+  </mat-dialog-content>
+  <div mat-dialog-actions style="display: inline-flex; padding: 0;">
+    <button mat-button (click)="onDismiss()">No</button>
+    <button mat-raised-button color="primary" (click)="onConfirm()">Yes</button>
+  </div>
+</div>
